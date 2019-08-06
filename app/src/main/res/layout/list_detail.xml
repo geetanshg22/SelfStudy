@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/shadow">
+
+    <ImageView
+        android:id="@+id/percentage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:src="@drawable/ic_menu_camera"
+        android:background="#2842F5EF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/subjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:textSize="17dp"
+            android:text="Mental Ability"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:textSize="16dp"
+                android:text="Progress"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_toRightOf="@+id/progressText"
+                android:layout_margin="7dp"
+                android:outlineAmbientShadowColor="#42A5F5"
+                android:outlineSpotShadowColor="#42A5F5"/>
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:layout_toRightOf="@+id/progressBar" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
